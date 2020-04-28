@@ -1,1 +1,4 @@
-/* Your custom styles */
+/* Navbar Box Shadow */
+.navbar{
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.16), 0 10px 12px 0 rgba(0,0,0,.12);
+}
