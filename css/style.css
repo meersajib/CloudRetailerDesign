@@ -2,4 +2,42 @@
 .navbar{
     box-shadow: 0 5px 5px 0 rgba(0,0,0,.16), 0 10px 12px 0 rgba(0,0,0,.12);
 }
+.cart-counter{
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+i.fab.fa-opencart, i.fas .fa-user {
+    font-size: 24px;
+}
+a.navbar-brand.font-weight-bold.d-sm-block {
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 576px) { 
+
+    button.navbar-toggler.absolute-toogler {
+        position: absolute;
+        top: 155px;
+        right: 20px;
+        z-index: 5;
+    }
+    div#navbarSupportedContent-4 {
+        position: absolute;
+        right: 0;
+        top: 200px;
+        z-index: 5;
+        background: #fff;
+        width: 100%;
+        text-align: right;
+        padding: 0 25px;
+    }
+    .cart-counter{
+        position: absolute;
+        right: 30px;
+    }
+    
+
+ }
 

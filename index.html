@@ -32,11 +32,17 @@
 
         <!-- SideNav slide-out button -->
 
-        <a class="navbar-brand font-weight-bold" href="#">
+        <a class="navbar-brand font-weight-bold d-sm-block" href="#">
 
           <strong>CloudRetailer</strong>
 
         </a>
+
+        <form class="form-block w-100 mx-3 mt-3 d-flex justify-content-center md-form form-sm mt-0">
+          <input class="form-control form-control-sm mr-3 w-90" type="text" placeholder="Search"
+            aria-label="Search">
+            <i class="fas fa-search mt-3" aria-hidden="true"></i>
+        </form>
 
         <button class="navbar-toggler absolute-toogler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
           aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,33 +54,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
 
           <ul class="navbar-nav ml-auto">
-
-            <li class="nav-item">
-
-              <a class="nav-link waves-effect waves-light dark-grey-text font-weight-bold" href="#">
-
-                <i class="fas fa-user blue-text"></i> Login
-
-                <span class="sr-only">(current)</span>
-
-              </a>
-
-            </li>
-
             <li class="nav-item ml-3">
-
+  
               <a class="nav-link waves-effect waves-light dark-grey-text font-weight-bold" href="#">
 
-                <i class="fas fa-user blue-text"></i> Register</a>
+                <i class="fas fa-user"></i></a>
 
             </li>
-
             <li class="nav-item dropdown ml-3">
 
-              <a class="nav-link dropdown-toggle waves-effect waves-light dark-grey-text font-weight-bold"
+              <a class="nav-link waves-effect waves-light dark-grey-text font-weight-bold"
                 id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-                <i class="fas fa-shopping-cart blue-text"></i> Cart </a>
+                <i class="fab fa-opencart"></i><span class="cart-counter">0</span></a>
 
               <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
 
@@ -580,17 +572,9 @@
               </li>
 
             </ul>
-
+            
             <!-- Links -->
-            <form class="search-form" role="search">
-
-              <div class="form-group md-form my-0 waves-light">
-
-                <input type="text" class="form-control" placeholder="Search">
-
-              </div>
-
-            </form>
+           
 
           </div>
           <!-- Collapsible content -->
