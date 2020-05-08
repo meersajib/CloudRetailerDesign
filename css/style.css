@@ -49,6 +49,10 @@ a.navbar-brand.font-weight-bold.d-sm-block {
         position: absolute;
         top: -50px;
     }
+    .btn-block-sm{
+        width: 100%;
+        display: block;
+    }
     
 
  }
