@@ -4,8 +4,9 @@
 }
 .cart-counter{
     position: absolute;
-    left: 10px;
-    top: 0;
+    left: 8px;
+    top: 12px;
+    font-size: 12px;
 }
 i.fab.fa-opencart, i.fas .fa-user {
     font-size: 24px;
@@ -13,6 +14,9 @@ i.fab.fa-opencart, i.fas .fa-user {
 a.navbar-brand.font-weight-bold.d-sm-block {
     text-align: center;
     width: 100%;
+}
+.navbar>.container{
+    display: block;
 }
 
 @media (max-width: 576px) { 
@@ -33,13 +37,17 @@ a.navbar-brand.font-weight-bold.d-sm-block {
         text-align: right;
         padding: 0 25px;
     }
-    .cart-counter{
-        position: absolute;
-        right: 30px;
-    }
+    
     a.navbar-brand.font-weight-bold{
         width: 100%;
         text-align: center;
+    }
+    .ml-custom-5{
+        margin-left: 5rem!important;
+    }
+    button.navbar-toggler {
+        position: absolute;
+        top: -50px;
     }
     
 

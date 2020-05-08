@@ -22,73 +22,231 @@
 
 <body class="homepage-v1 hidden-sn white-skin animated">
 
-  <!-- Navigation -->
-  <header class="">
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg  navbar-light white">
-
+<!-- Top Navigation -->
+  <header>
+    <!--Navbar -->
+    <nav class="navbar navbar-light">
       <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <a class="navbar-brand font-weight-bold" href="#">Cloud Retailer</a>
+          </div>
+          <div class="offset-md-4 offset-sm-12"></div>
+          <div class="col-md-4 col-sm-3 d-flex justify-content-md-end">
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item ml-custom-5 mr-md-4 mt-md-2">
+                <!-- Search modal -->
+                <img data-toggle="modal" data-target="#searchModal"  width="30px" src="./img/search.png" alt="">
 
-        <!-- SideNav slide-out button -->
+                
+                <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                  aria-hidden="true">
 
-        <a class="navbar-brand font-weight-bold" href="#">
+                  <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                  <div class="modal-dialog modal-dialog-centered" role="document">
 
-          <strong>CloudRetailer</strong>
 
-        </a>
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">What are you looking for?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form class="form-block w-100 mx-3 mt-3 d-flex justify-content-center md-form form-sm mt-0">
+                          <input class="form-control form-control-sm mr-3 w-90" type="text" placeholder="Search"
+                            aria-label="Search">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Search Modal -->
+              </li>
+            <li class="nav-item ml-custom-5 mr-md-4 mt-md-2">
+                <!--Modal: Login / Register Form-->
+                <img data-toggle="modal" data-target="#userModal"  width="30px" src="./img/user.png" alt="">
+                <div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog cascading-modal" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
 
-        <form class="form-block w-100 mx-3 mt-3 d-flex justify-content-center md-form form-sm mt-0">
-          <input class="form-control form-control-sm mr-3 w-90" type="text" placeholder="Search"
-            aria-label="Search">
-            <i class="fas fa-search mt-3" aria-hidden="true"></i>
-        </form>
+                      <!--Modal cascading tabs-->
+                      <div class="modal-c-tabs">
 
-        <button class="navbar-toggler absolute-toogler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-          aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+                              Login</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                              Register</a>
+                          </li>
+                        </ul>
 
-          <span class="fas fa-user"></span>
+                        <!-- Tab panels -->
+                        <div class="tab-content">
+                          <!--Panel 7-->
+                          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
 
-        </button>
+                            <!--Body-->
+                            <div class="modal-body mb-1">
+                              <div class="md-form form-sm mb-5">
+                                <i class="fas fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                              </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                              <div class="md-form form-sm mb-4">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                              </div>
+                              <div class="text-center mt-2">
+                                <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                              </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                              <div class="options text-center text-md-right mt-1">
+                                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                              </div>
+                              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                            </div>
 
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item ml-3">
-  
-              <a class="nav-link waves-effect waves-light dark-grey-text font-weight-bold" href="#">
+                          </div>
+                          <!--/.Panel 7-->
 
-                <i class="fas fa-user"></i></a>
+                          <!--Panel 8-->
+                          <div class="tab-pane fade" id="panel8" role="tabpanel">
 
-            </li>
-            <li class="nav-item dropdown ml-3">
+                            <!--Body-->
+                            <div class="modal-body">
+                              <div class="md-form form-sm mb-5">
+                                <i class="fas fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                              </div>
 
-              <a class="nav-link waves-effect waves-light dark-grey-text font-weight-bold"
-                id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <div class="md-form form-sm mb-5">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                              </div>
 
-                <i class="fab fa-opencart"></i><span class="cart-counter">0</span></a>
+                              <div class="md-form form-sm mb-4">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                              </div>
 
-              <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
+                              <div class="text-center form-sm mt-2">
+                                <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                              </div>
 
-                <a class="dropdown-item waves-effect waves-light" href="#">My account</a>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                              <div class="options text-right">
+                                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                              </div>
+                              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                          <!--/.Panel 8-->
+                        </div>
 
-                <a class="dropdown-item waves-effect waves-light" href="#">Log out</a>
+                      </div>
+                    </div>
+                    <!--/.Content-->
+                  </div>
+                </div>
+                <!--Modal: Login / Register Form-->
+              </li>
+            <li class="nav-item ml-custom-5 mt-md-2">
+                <!-- Modal: modalCart -->
+                <img data-toggle="modal" data-target="#cartModal" width="30px" src="./img/cart.png" alt="">
+                <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <!--Header-->
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Your cart</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <!--Body-->
+                      <div class="modal-body">
 
-              </div>
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>Product name</th>
+                              <th>Price</th>
+                              <th>Remove</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Product 1</td>
+                              <td>100$</td>
+                              <td><a><i class="fas fa-times"></i></a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Product 2</td>
+                              <td>100$</td>
+                              <td><a><i class="fas fa-times"></i></a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Product 3</td>
+                              <td>100$</td>
+                              <td><a><i class="fas fa-times"></i></a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Product 4</td>
+                              <td>100$</td>
+                              <td><a><i class="fas fa-times"></i></a></td>
+                            </tr>
+                            <tr class="total">
+                              <th scope="row">5</th>
+                              <td>Total</td>
+                              <td>400$</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
 
-            </li>
-
-          </ul>
-
+                      </div>
+                      <!--Footer-->
+                      <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary">Shopping</button>
+                        <button class="btn btn-primary">Checkout</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal: modalCart -->
+              </li>
+            </ul>
+          </div>
         </div>
-
       </div>
-
     </nav>
-    <!-- Navbar -->
-
+    <!--/.Navbar -->
   </header>
-  <!-- Navigation -->
+<!-- Top Navigation -->
 
   <!-- Intro -->
   <section class="">
@@ -114,7 +272,7 @@
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
 
-              <li class="nav-item dropdown mega-dropdown active">
+              <li class="dropdown mega-dropdown active">
 
                 <a class="nav-link dropdown-toggle  no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">Laptop</a>
@@ -289,7 +447,7 @@
 
               </li>
 
-              <li class="nav-item dropdown mega-dropdown">
+              <li class="dropdown mega-dropdown">
 
                 <a class="nav-link dropdown-toggle no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">Cameras</a>
@@ -410,7 +568,7 @@
 
               </li>
 
-              <li class="nav-item dropdown mega-dropdown">
+              <li class="dropdown mega-dropdown">
 
                 <a class="nav-link dropdown-toggle no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">Accesories</a>
