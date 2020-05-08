@@ -43,7 +43,10 @@ a.navbar-brand.font-weight-bold.d-sm-block {
         text-align: center;
     }
     .ml-custom-5{
-        margin-left: 5rem!important;
+        margin-left: 4rem!important;
+    }
+    .mr-custom-3{
+        /* margin-right: 3rem!important; */
     }
     button.navbar-toggler {
         position: absolute;
@@ -53,6 +56,7 @@ a.navbar-brand.font-weight-bold.d-sm-block {
         width: 100%;
         display: block;
     }
+    
     
 
  }
