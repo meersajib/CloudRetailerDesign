@@ -45,9 +45,7 @@ a.navbar-brand.font-weight-bold.d-sm-block {
     .ml-custom-5{
         margin-left: 4rem!important;
     }
-    .mr-custom-3{
-        /* margin-right: 3rem!important; */
-    }
+    
     button.navbar-toggler {
         position: absolute;
         top: -50px;
