@@ -8,6 +8,12 @@
     top: 12px;
     font-size: 12px;
 }
+.my-form{
+    width: 70%;
+}
+input.form-control.my-input.mr-sm-2 {
+    width: 100%;
+}
 i.fab.fa-opencart, i.fas .fa-user {
     font-size: 24px;
 }
