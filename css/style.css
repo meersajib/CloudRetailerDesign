@@ -38,6 +38,10 @@ a.navbar-brand.font-weight-bold.d-sm-block {
     border-color: rgb(0, 132, 255);
     color: #fff;
 }
+input.form-control.my-0.py-1.amber-border {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 /* .modal .modal-full-height{
     width: 300px;
 } */
