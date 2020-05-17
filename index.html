@@ -25,281 +25,96 @@
 <!-- Top Navigation -->
   <header>
     <!--Navbar -->
-    <nav class="navbar navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-12">
+          <div class="col-md-2">
             <a class="navbar-brand font-weight-bold" href="#">Cloud Retailer</a>
           </div>
-          <div class="offset-md-4 offset-sm-12"></div>
-          <div class="col-md-4 col-sm-3 d-flex justify-content-md-end">
+          <div class="col-md-8 flexible-search">
+            <div class="input-group md-form form-sm form-2 p-0 mt-2">
+              <input class="form-control my-0 py-1 amber-border" type="text" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <span class="input-group-text amber lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
+                    aria-hidden="true"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 d-flex justify-content-md-end">
             <ul class="navbar-nav ml-auto nav-flex-icons">
-            <li class="nav-item ml-custom-5 mr-md-4 mt-md-2 mt-4">
-                <!-- Search modal -->
-                <img data-toggle="modal" data-target="#searchModal"  width="30px" src="./img/search.png" alt="">
-
-                
-                <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                  aria-hidden="true">
-
-                  <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-
-
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">What are you looking for?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <form class="form-inline">
-                          <div class="md-form my-form my-0">
-                            <input class="form-control my-input mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                          </div>
-                          <button class="btn btn-outline-info btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-info btn-md waves-effect" data-dismiss="modal">Close</button>
-                      </div>
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light">
+                  <i class="fas brand-color fa-user-alt"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a data-toggle="modal" data-target="#modalPoll-1" class="nav-link waves-effect waves-light">
+                  <i class="fab brand-color fa-opencart"></i>
+                </a>
+              </li>            
+              <!-- Modal: modalPoll -->
+              <div class="modal fade right" id="modalPoll-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true" data-backdrop="false">
+                <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
+                  <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                      <p class="heading lead">Your Shopping Cart!
+                      </p>
+              
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">×</span>
+                      </button>
+                    </div>
+              
+                    <!--Body-->
+                    <div class="modal-body">
+                      <ul class="list-group">
+                        <a href="">
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <img height="30px" src="./img/shopping-bag-outline.png" alt=""> Cras justo odio
+                            <span class="badge badge-primary badge-pill">14</span>
+                          </li>
+                        </a>
+                        <a href="">
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <img height="30px" src="./img/shopping-bag-outline.png" alt=""> Cras justo odio
+                            <span class="badge badge-primary badge-pill">14</span>
+                          </li>
+                        </a>
+                        <a href="">
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <img height="30px" src="./img/shopping-bag-outline.png" alt=""> Cras justo odio
+                            <span class="badge badge-primary badge-pill">14</span>
+                          </li>
+                        </a>
+                      </ul>         
+                    </div>
+              
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center">
+                      <p><a type="button" class="btn btn-primary">Checkout
+                      </a></p>
+                      <p>
+                        <a type="button" class="btn btn-outline-primary">Shopping</a>
+                      </p>  
                     </div>
                   </div>
                 </div>
-                <!-- Search Modal -->
-              </li>
-              <li class="nav-item ml-custom-5 mr-md-4 mt-md-2 mr-custom-3 mt-4">
-                <!--Modal: Login / Register Form-->
-                <img data-toggle="modal" data-target="#userDashboard"  width="30px" src="./img/user.png" alt="">
-                <div class="modal fade" id="userDashboard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog cascading-modal" role="document">
-                    <!--Content-->
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <ul class="list-group">
-                          <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <a href="#!" class="list-group-item-action"><img width="30px" src="./img/user.png" alt=""> User Name</a>
-                          </li>
-                          <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <a href="#!" class="list-group-item-action">My Profile</a>
-                          </li>
-                          <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <a href="#!" class="list-group-item-action">My Shop</a>
-                          </li>
-                          <li class="list-group-item">
-                            <a href="#!" class="list-group-item-action d-flex justify-content-between align-items-center">My Balance
-                            <span class="badge badge-primary badge-pill">170 TK</span></a>
-                          </li>
-                          <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <a href="#!" class="list-group-item-action">Logout</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="modal-footer text-center">
-                        <button type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                    <!--/.Content-->
-                  </div>
+              </div>
+              <!-- Modal: modalPoll -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                  aria-labelledby="navbarDropdownMenuLink-333">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-                <!--Modal: Login / Register Form-->
-              </li>
-            <li class="nav-item ml-custom-5 mr-md-4 mt-md-2 mr-custom-3 mt-4">
-                <!--Modal: Login / Register Form-->
-                <img data-toggle="modal" data-target="#userModal"  width="30px" src="./img/user.png" alt="">
-                <div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog cascading-modal" role="document">
-                    <!--Content-->
-                    <div class="modal-content">
-
-                      <!--Modal cascading tabs-->
-                      <div class="modal-c-tabs">
-
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
-                          <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
-                              Login</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
-                              Register</a>
-                          </li>
-                        </ul>
-
-                        <!-- Tab panels -->
-                        <div class="tab-content">
-                          <!--Panel 7-->
-                          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
-
-                            <!--Body-->
-                            <div class="modal-body mb-1">
-                              <div class="md-form form-sm mb-5">
-                                <i class="fas fa-envelope prefix"></i>
-                                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
-                                <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
-                              </div>
-
-                              <div class="md-form form-sm mb-4">
-                                <i class="fas fa-lock prefix"></i>
-                                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
-                                <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
-                              </div>
-                              <div class="text-center mt-2">
-                                <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
-                              </div>
-                            </div>
-                            <!--Footer-->
-                            <div class="modal-footer">
-                              <div class="container">
-                                <div class="row">
-                                  <div class="options col-md-6 col-12 text-center text-md-left mt-1">
-                                    <p><a href="#" class="blue-text">Not a member? Sign Up</a></p>
-                                    <p><a href="#" class="blue-text">Forgot Password?</a></p>
-                                  </div>
-                                  <div class="col-md-6 col-12 text-center">
-                                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                          </div>
-                          <!--/.Panel 7-->
-
-                          <!--Panel 8-->
-                          <div class="tab-pane fade" id="panel8" role="tabpanel">
-
-                            <!--Body-->
-                            <div class="modal-body">
-                              <div class="md-form form-sm mb-5">
-                                <i class="fas fa-envelope prefix"></i>
-                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
-                                <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
-                              </div>
-
-                              <div class="md-form form-sm mb-5">
-                                <i class="fas fa-lock prefix"></i>
-                                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
-                                <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
-                              </div>
-
-                              <div class="md-form form-sm mb-4">
-                                <i class="fas fa-lock prefix"></i>
-                                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
-                                <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
-                              </div>
-
-                              <div class="text-center form-sm mt-2">
-                                <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
-                              </div>
-
-                            </div>
-                            <!--Footer-->
-                            <div class="modal-footer">
-                              <div class="container">
-                                <div class="row">
-                                  <div class="options col-md-6 col-12 text-center text-md-left mt-1">
-                                    <a href="#" class="blue-text"><p class="pt-1">Already have an account? Log In</p></a>
-                                  </div>
-                                  <div class="col-md-6 col-12 text-center">
-                                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!--/.Panel 8-->
-                        </div>
-
-                      </div>
-                    </div>
-                    <!--/.Content-->
-                  </div>
-                </div>
-                <!--Modal: Login / Register Form-->
-              </li>
-            <li class="nav-item ml-custom-5 mt-md-2 mt-4">
-                <!-- Modal: modalCart -->
-                <img data-toggle="modal" data-target="#cartModal" width="30px" src="./img/cart.png" alt="">
-                <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <!--Header-->
-                      <div class="modal-header">
-                        <h4 class="modal-title" id="myModalLabel">Your cart</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">×</span>
-                        </button>
-                      </div>
-                      <!--Body-->
-                      <div class="modal-body">
-
-                        <table class="table table-hover">
-                          <thead>
-                            <tr>
-                              <th>#</th>
-                              <th>Product name</th>
-                              <th>Price</th>
-                              <th>Remove</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th scope="row">1</th>
-                              <td>Product 1</td>
-                              <td>100 TK</td>
-                              <td><a><i class="fas fa-times"></i></a></td>
-                            </tr>
-                            <tr>
-                              <th scope="row">2</th>
-                              <td>Product 2</td>
-                              <td>100 TK</td>
-                              <td><a><i class="fas fa-times"></i></a></td>
-                            </tr>
-                            <tr>
-                              <th scope="row">3</th>
-                              <td>Product 3</td>
-                              <td>100 TK</td>
-                              <td><a><i class="fas fa-times"></i></a></td>
-                            </tr>
-                            <tr>
-                              <th scope="row">4</th>
-                              <td>Product 4</td>
-                              <td>100 TK</td>
-                              <td><a><i class="fas fa-times"></i></a></td>
-                            </tr>
-                            <tr class="total">
-                              <th scope="row">5</th>
-                              <td>Total</td>
-                              <td>400 TK</td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                      </div>
-                      <!--Footer-->
-                      <div class="modal-footer d-flex justify-content-md-center">
-                        <div class="row">
-                          <div class="col-md-4 col-12">
-                            <button class="btn btn-primary btn-block-sm">Shopping</button>
-                          </div>
-                          <div class="col-md-4 col-12">
-                            <button class="btn btn-primary btn-block-sm">Checkout</button>
-                          </div>
-                          <div class="col-md-4 col-12">
-                            <button type="button" class="btn btn-outline-primary btn-block-sm" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Modal: modalCart -->
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -3203,7 +3018,6 @@
     $(".button-collapse").sideNav();
 
   </script>
-
 </body>
 
 </html>
