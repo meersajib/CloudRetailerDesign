@@ -24,78 +24,104 @@
 <body class="homepage-v1 hidden-sn white-skin animated">
 
   <!-- Navigation -->
-  <header class="">
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg  navbar-light white">
-
+  <header>
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-
-        <!-- SideNav slide-out button -->
-
-        <a class="navbar-brand font-weight-bold" href="#">
-
-          <strong>CloudRetailer</strong>
-
-        </a>
-
-        <button class="navbar-toggler absolute-toogler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-          aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-
-          <span class="fas fa-user"></span>
-
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-
-          <ul class="navbar-nav ml-auto">
-
-            <li class="nav-item">
-
-              <a class="nav-link waves-effect waves-light dark-grey-text font-weight-bold" href="#">
-
-                <i class="fas fa-user blue-text"></i> Login
-
-                <span class="sr-only">(current)</span>
-
-              </a>
-
-            </li>
-
-            <li class="nav-item ml-3">
-
-              <a class="nav-link waves-effect waves-light dark-grey-text font-weight-bold" href="#">
-
-                <i class="fas fa-user blue-text"></i> Register</a>
-
-            </li>
-
-            <li class="nav-item dropdown ml-3">
-
-              <a class="nav-link dropdown-toggle waves-effect waves-light dark-grey-text font-weight-bold"
-                id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                <i class="fas fa-shopping-cart blue-text"></i> Cart </a>
-
-              <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
-
-                <a class="dropdown-item waves-effect waves-light" href="#">My account</a>
-
-                <a class="dropdown-item waves-effect waves-light" href="#">Log out</a>
-
+        <div class="row">
+          <div class="col-md-2">
+            <a class="navbar-brand font-weight-bold" href="#">Cloud Retailer</a>
+          </div>
+          <div class="col-md-8 flexible-search">
+            <div class="input-group md-form form-sm form-2 p-0 mt-2">
+              <input class="form-control my-0 py-1 amber-border" type="text" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <span class="input-group-text amber lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
+                    aria-hidden="true"></i></span>
               </div>
-
-            </li>
-
-          </ul>
-
+            </div>
+          </div>
+          <div class="col-md-2 d-flex justify-content-md-end">
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light">
+                  <i class="fas brand-color fa-user-alt"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a data-toggle="modal" data-target="#modalPoll-1" class="nav-link waves-effect waves-light">
+                  <i class="fab brand-color fa-opencart"></i>
+                </a>
+              </li>            
+              <!-- Modal: modalPoll -->
+              <div class="modal fade right" id="modalPoll-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true" data-backdrop="false">
+                <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
+                  <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                      <p class="heading lead">Your Shopping Cart!
+                      </p>
+              
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">×</span>
+                      </button>
+                    </div>
+              
+                    <!--Body-->
+                    <div class="modal-body">
+                      <ul class="list-group">
+                        <a href="">
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <img height="30px" src="./img/shopping-bag-outline.png" alt=""> Cras justo odio
+                            <span class="badge badge-primary badge-pill">14</span>
+                          </li>
+                        </a>
+                        <a href="">
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <img height="30px" src="./img/shopping-bag-outline.png" alt=""> Cras justo odio
+                            <span class="badge badge-primary badge-pill">14</span>
+                          </li>
+                        </a>
+                        <a href="">
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <img height="30px" src="./img/shopping-bag-outline.png" alt=""> Cras justo odio
+                            <span class="badge badge-primary badge-pill">14</span>
+                          </li>
+                        </a>
+                      </ul>         
+                    </div>
+              
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center">
+                      <p><a type="button" class="btn btn-primary">Checkout
+                      </a></p>
+                      <p>
+                        <a type="button" class="btn btn-outline-primary">Shopping</a>
+                      </p>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal: modalPoll -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                  aria-labelledby="navbarDropdownMenuLink-333">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li> -->
+            </ul>
+          </div>
         </div>
-
       </div>
-
     </nav>
-    <!-- Navbar -->
-
+    <!--/.Navbar -->
   </header>
   <!-- Navigation -->
 
@@ -123,7 +149,7 @@
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
 
-              <li class="nav-item dropdown mega-dropdown active">
+              <li class="dropdown mega-dropdown active">
 
                 <a class="nav-link dropdown-toggle  no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">Laptop</a>
@@ -298,7 +324,7 @@
 
               </li>
 
-              <li class="nav-item dropdown mega-dropdown">
+              <li class="dropdown mega-dropdown">
 
                 <a class="nav-link dropdown-toggle no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">Cameras</a>
@@ -419,7 +445,7 @@
 
               </li>
 
-              <li class="nav-item dropdown mega-dropdown">
+              <li class="dropdown mega-dropdown">
 
                 <a class="nav-link dropdown-toggle no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">Accesories</a>
@@ -581,17 +607,9 @@
               </li>
 
             </ul>
-
+            
             <!-- Links -->
-            <form class="search-form" role="search">
-
-              <div class="form-group md-form my-0 waves-light">
-
-                <input type="text" class="form-control" placeholder="Search">
-
-              </div>
-
-            </form>
+           
 
           </div>
           <!-- Collapsible content -->
@@ -773,11 +791,61 @@
     
                       <div class="col-md-12 text-center text-md-left">
 
-                        <button class="btn btn-floating">
-                            <i class="fas fa-heart red-text"></i>
-                        </button>
+                        <button class="btn btn-primary btn-rounded" data-toggle="modal" data-target="#my-shop-modal">
     
-                        <button class="btn btn-primary btn-rounded">
+                          Add to <i class="fas fa-home"></i></button>
+
+                        <!--Modal: my-shop-modal-->
+                        <div class="modal fade" id="my-shop-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog modal-notify modal-info" role="document">
+                            <!--Content-->
+                            <div class="modal-content text-center">
+                              <!--Header-->
+                              <div class="modal-header d-flex justify-content-center">
+                                <p class="heading">Be always up to date</p>
+                              </div>
+
+                              <!--Body-->
+                              <div class="modal-body">
+                                <a href="" class="btn btn-outline-info">New Product</a>
+                                <a href="" class="btn btn-outline-info">Future Product</a>
+                                <a href="" class="btn btn-outline-info">Existing Product</a>
+                                <a href="" class="btn btn-outline-info" data-toggle="modal" data-target="#modalLoginAvatar">Add New</a>  
+                                
+                                <!--Modal: Login with Avatar Form-->
+                                <div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+                                  <!--Content-->
+                                  <div class="modal-content">
+                                    <!--Body-->
+                                    <div class="modal-body text-center mb-1">
+                                      <div class="md-form ml-0 mr-0">
+                                        <input type="text" type="text" id="form29" class="form-control form-control-sm validate ml-0" placeholder="Shop Name"/>
+                                      </div>
+
+                                      <div class="text-center mt-4">
+                                        <button class="btn btn-cyan mt-1">Add<i class="fas fa-sign-in ml-1"></i></button>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                  <!--/.Content-->
+                                </div>
+                                </div>
+                               </div>
+                              <!--Footer-->
+                              <div class="modal-footer flex-center">
+                                <a type="button" class="btn btn-outline-danger btn-sm" data-dismiss="modal">Cancel</a>
+                              </div>
+                            </div>
+                            <!--/.Content-->
+                          </div>
+                        </div>
+                        <!--Modal: modalPush-->
+    
+                        <button class="btn btn-primary btn-rounded" onclick="addToCart()">
     
                           Add to <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i></button>
     
@@ -2378,15 +2446,7 @@
     $(document).ready(function() {
       $('.zoom').magnify();
     });
-    </script>
-    <!-- <script>
-      $(document).ready(function() {
-        $('.zoom').magnify({
-          speed: 200,
-          src: 'https://static-01.daraz.com.bd/p/93df0e55b9701e3c2c6fefd5b537dc23.jpg_340x340q80.jpg_.webp'
-        });
-      });
-      </script> -->
+  </script>
 </body>
 
 </html>
