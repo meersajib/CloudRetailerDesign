@@ -77,6 +77,7 @@ input.form-control.my-0.py-1.amber-border {
   button.navbar-toggler {
     position: absolute;
     top: -50px;
+    left: 0;
   }
   .btn-block-sm {
     width: 100%;
